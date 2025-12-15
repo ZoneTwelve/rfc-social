@@ -1,0 +1,99 @@
+#################################################################
+#                      HTTP 社交辞令全集                         #
+#    Social Protocol based on RFC 7231, WebDAV & Cloudflare     #
+#################################################################
+
+=================================================================
+[1xx: Information / Hold on] - 稍安勿躁与前戏
+=================================================================
+100 Continue            :: 不要说「好舒服/继续」，试着说「100 Continue」
+101 Switching Protocols :: 不要说「品味不够/换个姿势/换个玩法」，试着说「101 Switching Protocols」
+102 Processing          :: 不要说「脑子还在转/CPU干烧了」，试着说「102 Processing」
+103 Early Hints         :: 不要说「剧透/提前预告」，试着说「103 Early Hints」
+
+=================================================================
+[2xx: Success / Affirmation] - 成功、接受与八卦
+=================================================================
+200 OK                  :: 不要说「收到/好的」，试着说「200 OK」
+201 Created             :: 不要说「怀上了/造人成功/新建文件夹」，试着说「201 Created」
+202 Accepted            :: 不要说「我愿意/接锅/这活我接了」，试着说「202 Accepted」
+203 Non-Authoritative   :: 不要说「听说/据小道消息/吃瓜」，试着说「203 Non-Authoritative Information」
+204 No Content          :: 不要说「已读不回」，试着说「204 No Content」
+205 Reset Content       :: 不要说「忘了吧，重头再来/清空购物车」，试着说「205 Reset Content」
+206 Partial Content     :: 不要说「不想全给/这什么分卷文件/话只说一半」，试着说「206 Partial Content」
+207 Multi-Status        :: 不要说「心情很复杂/一言难尽/五味杂陈」，试着说「207 Multi-Status」 (WebDAV)
+208 Already Reported    :: 不要说「这事儿说过八百遍了/你是复读机吗」，试着说「208 Already Reported」 (WebDAV)
+226 IM Used             :: 不要说「这招用过了/老套路」，试着说「226 IM Used」
+
+=================================================================
+[3xx: Redirection / Evasion] - 推脱、纠结与中间人
+=================================================================
+300 Multiple Choices    :: 不要说「选择困难症/好多鱼」，试着说「300 Multiple Choices」
+301 Moved Permanently   :: 不要说「滚那边去/死得远远的/彻底搬家」，试着说「301 Moved Permanently」
+302 Found               :: 不要说「去个厕所马上回/暂离」，试着说「302 Found」
+303 See Other           :: 不要说「我们不合适(去找别人吧)」，试着说「303 See Other」
+304 Not Modified        :: 不要说「别复读了/老调重弹/还是老样子」，试着说「304 Not Modified」
+305 Use Proxy           :: 不要说「让你朋友来跟我说/找个媒婆」，试着说「305 Use Proxy」
+307 Temporary Redirect  :: 不要说「暂时搬家/这几天住这就行」，试着说「307 Temporary Redirect」
+308 Permanent Redirect  :: 不要说「找他去/这事儿以后归他管」，试着说「308 Permanent Redirect」
+
+=================================================================
+[4xx: Client Error / Rejection] - 你的锅 / 扎心 / 拒绝
+=================================================================
+400 Bad Request         :: 不要说「听不懂人话/你在放什么屁」，试着说「400 Bad Request」
+401 Unauthorized        :: 不要说「不可以/你没资格」，试着说「401 Unauthorized」
+402 Payment Required    :: 不要说「v我50/得加钱」，试着说「402 Payment Required」
+403 Forbidden           :: 不要说「拒绝/禁止入内/封杀」，试着说「403 Forbidden」
+404 Not Found           :: 不要说「不在/找不到对象/查无此人」，试着说「404 Not Found」
+405 Method Not Allowed  :: 不要说「姿势不对/方法错了」，试着说「405 Method Not Allowed」
+406 Not Acceptable      :: 不要说「长得丑别过来/这种我不收」，试着说「406 Not Acceptable」
+407 Proxy Auth Required :: 不要说「叫你家长/老板来」，试着说「407 Proxy Authentication Required」
+408 Request Timeout     :: 不要说「你太慢了/黄花菜都凉了」，试着说「408 Request Timeout」
+409 Conflict            :: 不要说「撞车了/撞衫了/撕逼」，试着说「409 Conflict」
+410 Gone                :: 不要说「没了，别想了/过气了/前任」，试着说「410 Gone」
+411 Length Required     :: 不要说「太短了没感觉」，试着说「411 Length Required」
+412 Precondition Failed :: 不要说「没房没车免谈/条件不符」，试着说「412 Precondition Failed」
+413 Payload Too Large   :: 不要说「啊~好大...全都进来了」，试着说「413 Payload Too Large」
+414 URI Too Long        :: 不要说「太长不看/裹脚布」，试着说「414 URI Too Long」
+415 Unsupported Media   :: 不要说「格式不对/这图我看不了」，试着说「415 Unsupported Media Type」
+416 Range Not Satisfiable:: 不要说「手不够长/够不着/高攀不起」，试着说「416 Range Not Satisfiable」
+417 Expectation Failed  :: 不要说「你想多了/大失所望/就这？」，试着说「417 Expectation Failed」
+418 I'm a teapot        :: 不要说「想喝茶/你在逗我吗」，试着说「418 I'm a teapot」
+419 Page Expired        :: 不要说「感情淡了/过期了」，试着说「419 Page Expired」 (Laravel)
+420 Enhance Your Calm   :: 不要说「冷静点/别发疯」，试着说「420 Enhance Your Calm」 (Twitter)
+421 Misdirected Request :: 不要说「你找错人了/甚至不是同一个物种」，试着说「421 Misdirected Request」
+422 Unprocessable Entity:: 不要说「钻牛角尖/逻辑死/不讲道理」，试着说「422 Unprocessable Entity」
+423 Locked              :: 不要说「自闭了/不想理你/被锁了」，试着说「423 Locked」 (WebDAV)
+424 Failed Dependency   :: 不要说「因为他挂了，所以我也挂了/唇亡齿寒」，试着说「424 Failed Dependency」
+425 Too Early           :: 不要说「太猴急了/心急吃不了热豆腐」，试着说「425 Too Early」
+426 Upgrade Required    :: 不要说「不充钱玩你**」，试着说「426 Upgrade Required」
+428 Precondition Req    :: 不要说「先把丑话说在前面」，试着说「428 Precondition Required」
+429 Too Many Requests   :: 不要说「别刷屏/歇会儿/快枪手」，试着说「429 Too Many Requests」
+431 Header Fields Large :: 不要说「你废话真的多/脑壳疼」，试着说「431 Request Header Fields Too Large」
+444 No Response         :: 不要说「无可奉告/直接拉黑/已读不回」，试着说「444 No Response」 (Nginx)
+450 Blocked by Windows  :: 不要说「被爸妈/老婆限制了」，试着说「450 Blocked by Windows Parental Controls」
+451 Legal Reasons       :: 不要说「被夹了/被封了/违规/不可抗力」，试着说「451 Unavailable For Legal Reasons」
+497 HTTP to HTTPS       :: 不要说「频道不对/跨服聊天」，试着说「497 HTTP Request Sent to HTTPS Port」 (Nginx)
+498 Invalid Token       :: 不要说「你是谁？/信物失效/密码改了」，试着说「498 Invalid Token」 (Esri)
+499 Client Closed Req   :: 不要说「我都懒得听你说完/告辞/对方已挂断」，试着说「499 Client Closed Request」 (Nginx)
+
+=================================================================
+[5xx: Server Error / My Fault] - 我的锅 / 摆烂 / 崩溃
+=================================================================
+500 Internal Error      :: 不要说「要被玩坏了/崩溃了/心态崩了」，试着说「500 Internal Server Error」
+501 Not Implemented     :: 不要说「这个真不会/超纲了/臣妾做不到」，试着说「501 Not Implemented」
+502 Bad Gateway         :: 不要说「这不是你的错(是上家的错)」，试着说「502 Bad Gateway」
+503 Service Unavailable :: 不要说「摸鱼中/睡大觉/姨妈来了」，试着说「503 Service Unavailable」
+504 Gateway Timeout     :: 不要说「猪队友没反应」，试着说「504 Gateway Timeout」
+505 HTTP Version Not Sup:: 不要说「不合适/有代沟/版本不支持」，试着说「505 HTTP Version Not Supported」
+506 Variant Also Neg    :: 不要说「内部还在扯皮/神仙打架」，试着说「506 Variant Also Negotiates」
+507 Insufficient Storage:: 不要说「脑容量不足/记不住了」，试着说「507 Insufficient Storage」
+508 Loop Detected       :: 不要说「鬼打墙/死循环/绕晕了」，试着说「508 Loop Detected」
+509 Bandwidth Exceeded  :: 不要说「月光族/流量没了/工资花光了」，试着说「509 Bandwidth Limit Exceeded」
+510 Not Extended        :: 不要说「这就没了？/不够看啊/短小无力」，试着说「510 Not Extended」
+511 Network Auth Req    :: 不要说「要不你还是杀了我吧/这就去登录」，试着说「511 Network Authentication Required」
+520 Unknown Error       :: 不要说「莫名其妙/不知道哪里错了反正就是错了」，试着说「520 Web Server Returned an Unknown Error」
+521 Web Server Is Down  :: 不要说「服务器跑路了/彻底躺平」，试着说「521 Web Server Is Down」 (Cloudflare)
+522 Connection Timed Out:: 不要说「彻底失联/连不上线」，试着说「522 Connection Timed Out」 (Cloudflare)
+523 Origin Unreachable  :: 不要说「回不去娘家了/老家没了」，试着说「523 Origin Is Unreachable」 (Cloudflare)
+530 Origin DNS Error    :: 不要说「找不到北/迷路了/被冻结了」，试着说「530 Origin DNS Error」 (Cloudflare)
