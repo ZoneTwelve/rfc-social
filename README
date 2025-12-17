@@ -1,99 +1,98 @@
 #################################################################
-#                        HTTP 社交辞令                           #
-#    Social Protocol based on RFC 7231, WebDAV & Cloudflare     #
-#################################################################
+#                       HTTP 社交辭令 (台灣版)                    #
+#         基於 RFC 7231、WebDAV 與 鄉民文化的社交協議               #
+=================================================================
+
+[1xx: 資訊 / 請稍候] - 稍安勿躁與前戲
+=================================================================
+100 Continue            :: 別說「好/繼續」，試著說「100 Continue」 (賀/來)
+101 Switching Protocols :: 別說「換個姿勢/換個玩法」，試著說「101 Switching Protocols」 (轉場/換個套路)
+102 Processing          :: 不要說「腦子還在轉/想不出來」，試著說「102 Processing」 (大腦 Loading 中/轉圈圈)
+103 Early Hints         :: 不要說「先跟你暴雷」，試著說「103 Early Hints」 (劇透注意)
 
 =================================================================
-[1xx: Information / Hold on] - 稍安勿躁与前戏
+[2xx: 成功 / 確認] - 成功、接受與八卦
 =================================================================
-100 Continue            :: 不要说「好舒服/继续」，试着说「100 Continue」
-101 Switching Protocols :: 不要说「品味不够/换个姿势/换个玩法」，试着说「101 Switching Protocols」
-102 Processing          :: 不要说「脑子还在转/CPU干烧了」，试着说「102 Processing」
-103 Early Hints         :: 不要说「剧透/提前预告」，试着说「103 Early Hints」
+200 OK                  :: 不要說「收到/好喔」，試著說「200 OK」
+201 Created             :: 不要說「搞定了/生出來了」，試著說「201 Created」
+202 Accepted            :: 不要說「這鍋我揹/好我處理」，試著說「202 Accepted」
+203 Non-Authoritative   :: 不要說「我是聽說的/作夢夢到的」，試著說「203 Non-Authoritative Information」
+204 No Content          :: 不要說「已讀不回/空氣」，試著說「204 No Content」
+205 Reset Content       :: 不要說「打掉重練/重新投胎」，試著說「205 Reset Content」
+206 Partial Content     :: 不要說「話只說一半/富堅」，試著說「206 Partial Content」
+207 Multi-Status        :: 不要說「一言難盡/心情複雜」，試著說「207 Multi-Status」
+208 Already Reported    :: 不要說「是要講幾次/跳針」，試著說「208 Already Reported」
+226 IM Used             :: 不要說「這老梗了/用過了」，試著說「226 IM Used」
 
 =================================================================
-[2xx: Success / Affirmation] - 成功、接受与八卦
+[3xx: 重定向 / 迴避] - 推諉、糾結與踢皮球
 =================================================================
-200 OK                  :: 不要说「收到/好的」，试着说「200 OK」
-201 Created             :: 不要说「怀上了/造人成功/新建文件夹」，试着说「201 Created」
-202 Accepted            :: 不要说「我愿意/接锅/这活我接了」，试着说「202 Accepted」
-203 Non-Authoritative   :: 不要说「听说/据小道消息/吃瓜」，试着说「203 Non-Authoritative Information」
-204 No Content          :: 不要说「已读不回」，试着说「204 No Content」
-205 Reset Content       :: 不要说「忘了吧，重头再来/清空购物车」，试着说「205 Reset Content」
-206 Partial Content     :: 不要说「不想全给/这什么分卷文件/话只说一半」，试着说「206 Partial Content」
-207 Multi-Status        :: 不要说「心情很复杂/一言难尽/五味杂陈」，试着说「207 Multi-Status」 (WebDAV)
-208 Already Reported    :: 不要说「这事儿说过八百遍了/你是复读机吗」，试着说「208 Already Reported」 (WebDAV)
-226 IM Used             :: 不要说「这招用过了/老套路」，试着说「226 IM Used」
+300 Multiple Choices    :: 不要說「選擇障礙/小朋友才做選擇」，試著說「300 Multiple Choices」
+301 Moved Permanently   :: 不要說「慢走不送/搬家了」，試著說「301 Moved Permanently」
+302 Found               :: 不要說「尿遁/去個廁所」，試著說「302 Found」
+303 See Other           :: 不要說「我們不適合(去找別人吧)」，試著說「303 See Other」
+304 Not Modified        :: 不要說「冷飯熱炒/沒新意」，試著說「304 Not Modified」
+305 Use Proxy           :: 不要說「叫你經紀人(窗口)來跟我談」，試著說「305 Use Proxy」
+307 Temporary Redirect  :: 不要說「寄生/借住一晚」，試著說「307 Temporary Redirect」
+308 Permanent Redirect  :: 不要說「這歸他管/踢皮球」，試著說「308 Permanent Redirect」
 
 =================================================================
-[3xx: Redirection / Evasion] - 推脱、纠结与中间人
+[4xx: 客戶端錯誤 / 拒絕] - 你的鍋 / 撿到槍 / 拒絕
 =================================================================
-300 Multiple Choices    :: 不要说「选择困难症/好多鱼」，试着说「300 Multiple Choices」
-301 Moved Permanently   :: 不要说「滚那边去/死得远远的/彻底搬家」，试着说「301 Moved Permanently」
-302 Found               :: 不要说「去个厕所马上回/暂离」，试着说「302 Found」
-303 See Other           :: 不要说「我们不合适(去找别人吧)」，试着说「303 See Other」
-304 Not Modified        :: 不要说「别复读了/老调重弹/还是老样子」，试着说「304 Not Modified」
-305 Use Proxy           :: 不要说「让你朋友来跟我说/找个媒婆」，试着说「305 Use Proxy」
-307 Temporary Redirect  :: 不要说「暂时搬家/这几天住这就行」，试着说「307 Temporary Redirect」
-308 Permanent Redirect  :: 不要说「找他去/这事儿以后归他管」，试着说「308 Permanent Redirect」
+400 Bad Request         :: 不要說「是在哈囉/供三小」，試著說「400 Bad Request」
+401 Unauthorized        :: 不要說「你哪位/沒權限」，試著說「401 Unauthorized」
+402 Payment Required    :: 不要說「課金/使用者付費」，試著說「402 Payment Required」
+403 Forbidden           :: 不要說「母湯/查水表/禁止進入」，試著說「403 Forbidden」
+404 Not Found           :: 不要說「神隱/人間蒸發/失蹤人口」，試著說「404 Not Found」
+405 Method Not Allowed  :: 不要說「用錯招了/姿勢不對」，試著說「405 Method Not Allowed」
+406 Not Acceptable      :: 不要說「這我不行/無法接受/醜拒」，試著說「406 Not Acceptable」
+407 Proxy Auth Required :: 不要說「叫你老闆(家長)出來」，試著說「407 Proxy Authentication Required」
+408 Request Timeout     :: 不要說「等到花兒都謝了/是要多久」，試著說「408 Request Timeout」
+409 Conflict            :: 不要說「撞期/修羅場/強碰」，試著說「409 Conflict」
+410 Gone                :: 不要說「瑞凡我們回不去了/過氣」，試著說「410 Gone」
+411 Length Required     :: 不要說「太短了沒感覺」，試著說「411 Length Required」
+412 Precondition Failed :: 不要說「條件不符/沒房沒車免談」，試著說「412 Precondition Failed」
+413 Payload Too Large   :: 不要說「資訊量過大/撐爆」，試著說「413 Payload Too Large」
+414 URI Too Long        :: 不要說「太長不看/文長慎入」，試著說「414 URI Too Long」
+415 Unsupported Media   :: 不要說「沒圖沒真相/格式錯誤」，試著說「415 Unsupported Media Type」
+416 Range Not Satisfiable :: 不要說「手不夠長/高攀不起」，試著說「416 Range Not Satisfiable」
+417 Expectation Failed  :: 不要說「想太多/就這？」，試著說「417 Expectation Failed」
+418 I'm a teapot        :: 不要說「來亂的/你在搞笑嗎」，試著說「418 I'm a teapot」
+419 Page Expired        :: 不要說「變心了/過期了」，試著說「419 Page Expired」
+420 Enhance Your Calm   :: 不要說「先不要/冷靜」，試著說「420 Enhance Your Calm」
+421 Misdirected Request :: 不要說「找錯人了/跑錯棚」，試著說「421 Misdirected Request」
+422 Unprocessable Entity :: 不要說「鑽牛角尖/講不聽」，試著說「422 Unprocessable Entity」
+423 Locked              :: 不要說「搞自閉/不想理你」，試著說「423 Locked」
+424 Failed Dependency   :: 不要說「唇亡齒寒/我就爛」，試著說「424 Failed Dependency」
+425 Too Early           :: 不要說「太猴急/呷緊弄破碗」，試著說「425 Too Early」
+426 Upgrade Required    :: 不要說「不儲值玩不下去」，試著說「426 Upgrade Required」
+428 Precondition Required :: 不要說「醜話說在前頭」，試著說「428 Precondition Required」
+429 Too Many Requests   :: 不要說「洗版/不要刷屏」，試著說「429 Too Many Requests」
+431 Header Fields Too Large :: 不要說「廢話太多/頭很痛」，試著說「431 Request Header Fields Too Large」
+444 No Response         :: 不要說「直接無視/已讀」，試著說「444 No Response」
+450 Blocked by Windows  :: 不要說「被家長(老婆)限制/被吉」，試著說「450 Blocked by Windows Parental Controls」
+451 Unavailable For Legal :: 不要說「被河蟹/被消失/違反社群守則」，試著說「451 Unavailable For Legal Reasons」
+497 HTTP to HTTPS       :: 不要說「跨頻聊天/不在同一個頻率」，試著說「497 HTTP Request Sent to HTTPS Port」
+498 Invalid Token       :: 不要說「信物失效/你是誰？」，試著說「498 Invalid Token」
+499 Client Closed Req   :: 不要說「懶得聽你說完/對方已掛斷/慢走不送」，試著說「499 Client Closed Request」
 
 =================================================================
-[4xx: Client Error / Rejection] - 你的锅 / 扎心 / 拒绝
+[5xx: 伺服器錯誤 / 我的鍋] - 我的鍋 / 擺爛 / 眼神死
 =================================================================
-400 Bad Request         :: 不要说「听不懂人话/你在放什么屁」，试着说「400 Bad Request」
-401 Unauthorized        :: 不要说「不可以/你没资格」，试着说「401 Unauthorized」
-402 Payment Required    :: 不要说「v我50/得加钱」，试着说「402 Payment Required」
-403 Forbidden           :: 不要说「拒绝/禁止入内/封杀」，试着说「403 Forbidden」
-404 Not Found           :: 不要说「不在/找不到对象/查无此人」，试着说「404 Not Found」
-405 Method Not Allowed  :: 不要说「姿势不对/方法错了」，试着说「405 Method Not Allowed」
-406 Not Acceptable      :: 不要说「长得丑别过来/这种我不收」，试着说「406 Not Acceptable」
-407 Proxy Auth Required :: 不要说「叫你家长/老板来」，试着说「407 Proxy Authentication Required」
-408 Request Timeout     :: 不要说「你太慢了/黄花菜都凉了」，试着说「408 Request Timeout」
-409 Conflict            :: 不要说「撞车了/撞衫了/撕逼」，试着说「409 Conflict」
-410 Gone                :: 不要说「没了，别想了/过气了/前任」，试着说「410 Gone」
-411 Length Required     :: 不要说「太短了没感觉」，试着说「411 Length Required」
-412 Precondition Failed :: 不要说「没房没车免谈/条件不符」，试着说「412 Precondition Failed」
-413 Payload Too Large   :: 不要说「啊~好大...全都进来了」，试着说「413 Payload Too Large」
-414 URI Too Long        :: 不要说「太长不看/裹脚布」，试着说「414 URI Too Long」
-415 Unsupported Media   :: 不要说「格式不对/这图我看不了」，试着说「415 Unsupported Media Type」
-416 Range Not Satisfiable:: 不要说「手不够长/够不着/高攀不起」，试着说「416 Range Not Satisfiable」
-417 Expectation Failed  :: 不要说「你想多了/大失所望/就这？」，试着说「417 Expectation Failed」
-418 I'm a teapot        :: 不要说「想喝茶/你在逗我吗」，试着说「418 I'm a teapot」
-419 Page Expired        :: 不要说「感情淡了/过期了」，试着说「419 Page Expired」 (Laravel)
-420 Enhance Your Calm   :: 不要说「冷静点/别发疯」，试着说「420 Enhance Your Calm」 (Twitter)
-421 Misdirected Request :: 不要说「你找错人了/甚至不是同一个物种」，试着说「421 Misdirected Request」
-422 Unprocessable Entity:: 不要说「钻牛角尖/逻辑死/不讲道理」，试着说「422 Unprocessable Entity」
-423 Locked              :: 不要说「自闭了/不想理你/被锁了」，试着说「423 Locked」 (WebDAV)
-424 Failed Dependency   :: 不要说「因为他挂了，所以我也挂了/唇亡齿寒」，试着说「424 Failed Dependency」
-425 Too Early           :: 不要说「太猴急了/心急吃不了热豆腐」，试着说「425 Too Early」
-426 Upgrade Required    :: 不要说「不充钱玩你**」，试着说「426 Upgrade Required」
-428 Precondition Req    :: 不要说「先把丑话说在前面」，试着说「428 Precondition Required」
-429 Too Many Requests   :: 不要说「别刷屏/歇会儿/快枪手」，试着说「429 Too Many Requests」
-431 Header Fields Large :: 不要说「你废话真的多/脑壳疼」，试着说「431 Request Header Fields Too Large」
-444 No Response         :: 不要说「无可奉告/直接拉黑/已读不回」，试着说「444 No Response」 (Nginx)
-450 Blocked by Windows  :: 不要说「被爸妈/老婆限制了」，试着说「450 Blocked by Windows Parental Controls」
-451 Legal Reasons       :: 不要说「被夹了/被封了/违规/不可抗力」，试着说「451 Unavailable For Legal Reasons」
-497 HTTP to HTTPS       :: 不要说「频道不对/跨服聊天」，试着说「497 HTTP Request Sent to HTTPS Port」 (Nginx)
-498 Invalid Token       :: 不要说「你是谁？/信物失效/密码改了」，试着说「498 Invalid Token」 (Esri)
-499 Client Closed Req   :: 不要说「我都懒得听你说完/告辞/对方已挂断」，试着说「499 Client Closed Request」 (Nginx)
-
-=================================================================
-[5xx: Server Error / My Fault] - 我的锅 / 摆烂 / 崩溃
-=================================================================
-500 Internal Error      :: 不要说「要被玩坏了/崩溃了/心态崩了」，试着说「500 Internal Server Error」
-501 Not Implemented     :: 不要说「这个真不会/超纲了/臣妾做不到」，试着说「501 Not Implemented」
-502 Bad Gateway         :: 不要说「这不是你的错(是上家的错)」，试着说「502 Bad Gateway」
-503 Service Unavailable :: 不要说「摸鱼中/睡大觉/姨妈来了」，试着说「503 Service Unavailable」
-504 Gateway Timeout     :: 不要说「猪队友没反应」，试着说「504 Gateway Timeout」
-505 HTTP Version Not Sup:: 不要说「不合适/有代沟/版本不支持」，试着说「505 HTTP Version Not Supported」
-506 Variant Also Neg    :: 不要说「内部还在扯皮/神仙打架」，试着说「506 Variant Also Negotiates」
-507 Insufficient Storage:: 不要说「脑容量不足/记不住了」，试着说「507 Insufficient Storage」
-508 Loop Detected       :: 不要说「鬼打墙/死循环/绕晕了」，试着说「508 Loop Detected」
-509 Bandwidth Exceeded  :: 不要说「月光族/流量没了/工资花光了」，试着说「509 Bandwidth Limit Exceeded」
-510 Not Extended        :: 不要说「这就没了？/不够看啊/短小无力」，试着说「510 Not Extended」
-511 Network Auth Req    :: 不要说「要不你还是杀了我吧/这就去登录」，试着说「511 Network Authentication Required」
-520 Unknown Error       :: 不要说「莫名其妙/不知道哪里错了反正就是错了」，试着说「520 Web Server Returned an Unknown Error」
-521 Web Server Is Down  :: 不要说「服务器跑路了/彻底躺平」，试着说「521 Web Server Is Down」 (Cloudflare)
-522 Connection Timed Out:: 不要说「彻底失联/连不上线」，试着说「522 Connection Timed Out」 (Cloudflare)
-523 Origin Unreachable  :: 不要说「回不去娘家了/老家没了」，试着说「523 Origin Is Unreachable」 (Cloudflare)
-530 Origin DNS Error    :: 不要说「找不到北/迷路了/被冻结了」，试着说「530 Origin DNS Error」 (Cloudflare)
+500 Internal Error      :: 不要說「崩潰/壞掉了/玻璃心碎」，試著說「500 Internal Server Error」
+501 Not Implemented     :: 別說「這我不會/超綱了」，試著說「501 Not Implemented」
+502 Bad Gateway         :: 別說「這不是我的錯(是豬隊友的錯)」，試著說「502 Bad Gateway」
+503 Service Unavailable :: 不要說「薪水小偷/裝死/不想上班」，試著說「503 Service Unavailable」
+504 Gateway Timeout     :: 不要說「被放鳥/隊友沒反應」，試著說「504 Gateway Timeout」
+505 Version Not Supported :: 不要說「代溝/頻率不對」，試著說「505 HTTP Version Not Supported」
+506 Variant Also Negotiates :: 不要說「神仙打架/還在喬」，試著說「506 Variant Also Negotiates」
+507 Insufficient Storage :: 不要說「腦容量不足/金魚腦」，試著說「507 Insufficient Storage」
+508 Loop Detected       :: 不要說「鬼打牆/無限迴圈」，試著說「508 Loop Detected」
+509 Bandwidth Limit     :: 不要說「吃土/月底了/流量爆了」，試著說「509 Bandwidth Limit Exceeded」
+510 Not Extended        :: 不要說「就這樣？/短小無力」，試著說「510 Not Extended」
+511 Network Auth Req    :: 不要說「不如殺了我吧/登入地獄」，試著說「511 Network Authentication Required」
+520 Unknown Error       :: 不要說「卡到陰/我就不知為什麼錯了」，試著說「520 Web Server Returned an Unknown Error」
+521 Web Server Is Down  :: 不要說「伺服器跑路了/徹底躺平」，試著說「521 Web Server Is Down」
+522 Connection Timed Out :: 不要說「徹底失聯/連不上線」，試著說「522 Connection Timed Out」
+523 Origin Unreachable  :: 不要說「回不去娘家/老家沒了」，試著說「523 Origin Is Unreachable」
+530 Origin DNS Error    :: 不要說「找不到路/迷航中」，試著說「530 Origin DNS Error」
